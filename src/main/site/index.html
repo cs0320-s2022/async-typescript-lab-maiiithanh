@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Horoscope Matcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In real-world webapps, css is usually minified and
+         concatenated. Here, separate normalize from our code, and
+         avoid minification for clarity. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5bp.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <div class="eight columns">
+            <div class="text-center">
+                <h1>Horoscope Matching</h1>
+            </div>
+            <label for="sun">Enter your sun:</label>
+            <select name="sun" id="sun">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <label for="moon">Enter your moon:</label>
+            <select name="moon" id="moon">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <label for="rising">Enter your rising:</label>
+            <select name="rising" id="rising">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <h3 id="loading" hidden>Loading...</h3>
+            <ul id="suggestions" aria-live=polite>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Again, we're serving up the unminified source for clarity. -->
+<script type="text/javascript" src="./ts/main.js"></script>
+<div class="message"></div>
+</body>
+<!-- See http://html5boilerplate.com/ for a good place to start
+     dealing with real world issues like old browsers.  -->
+
+</html>
